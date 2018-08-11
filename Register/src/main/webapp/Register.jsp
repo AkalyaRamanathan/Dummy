@@ -105,17 +105,33 @@ a {
   </form>
   </div>
   <div id="Customer" class="tabcontent">
-  <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    
+    <label for="username"><b>UserName</b></label>
+    <input type="text" placeholder="Enter username" name="username" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+    <label for="email"><b>User Id</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    
+     <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+   
+    <hr>
+   
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
   <script>
 function openCity(cityName,elmnt,color) {
     var i, tabcontent, tablinks;
