@@ -1,114 +1,53 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
 <style>
-* {
-    box-sizing: border-box;
-}
-/* Style the body */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-/* Header/logo Title */
-.header {
-    padding: 80px;
+.center {
+    margin: auto;
+    width: 60%;
+   
+      border: 3px solid green;
     text-align: center;
-    background: #1abc9c;
-    color: white;
 }
-/* Increase the font size of the heading */
-.header h1 {
-    font-size: 40px;
+    padding: 70px;
 }
-/* Style the top navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
+ul {
+    list-style-type: none;
+    margin: 50;
+    padding: 50;
+    width: 200px;
+    background-color: #f1f1f1;
 }
-/* Style the navigation bar links */
-.navbar a {
-    float: left;
+
+li a {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+    color: #000;
+    padding: 30px 16px;
     text-decoration: none;
 }
-/* Right-aligned link */
-.navbar a.right {
-    float: right;
-}
-/* Change color on hover */
-.navbar a:hover {
-    background-color: #ddd;
+
+li a.active {
+    background-color: #4CAF50;
     color: white;
 }
-/* Column container */
-.row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-}
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-/* Main column */
-.main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-}
-/* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {   
-        flex-direction: column;
-    }
-}
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    
 }
 </style>
-</head>
-<body>
-<div class="navbar" style="width: 723px; height: 325px; ">
-  <p align="center">
-  <a href="/CapstoreReg/CustomerReg.jsp" >Customer Signup</a>
-
-</p>
-
-
-</div>
-<div class="navbar">
-  <p align="center">
+<ul>
+  <li><a class="active" href="/CapstoreReg/Register.jsp">Customer</a></li>
+  <li><a href="/CapstoreReg/Register.jsp">Merchant</a></li>
  
- <a href="/CapstoreReg/Register.jsp">Merchant SignUp</a>
-</p>
-</div>
+</ul>
+
+
+
 </body>
 </html>
